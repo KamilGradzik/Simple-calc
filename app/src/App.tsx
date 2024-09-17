@@ -1,6 +1,7 @@
 import React from 'react';
 import NumberButton from './components/number-button/numberButton';
 import "./assets/app.scss";
+import ActionButton from './components/action-button/actionButton';
 
 function App() {
   return (
@@ -8,17 +9,22 @@ function App() {
       <div className='Calculator'>
         <div className='Calc-screen'></div>
         <div className='Calc-keyboard'>
-          <NumberButton number={1}/>
-          <NumberButton number={2}/>
-          <NumberButton number={3}/>
-          <NumberButton number={4}/>
-          <NumberButton number={5}/>
-          <NumberButton number={6}/>
-          <NumberButton number={7}/>
-          <NumberButton number={8}/>
-          <NumberButton number={9}/>
-          <NumberButton number={0}/>
-          <NumberButton number={'.'}/>
+          <NumberButton sign={1}/>
+          <NumberButton sign={2}/>
+          <NumberButton sign={3}/>
+          <ActionButton sign={"+"}/>
+          <NumberButton sign={4}/>
+          <NumberButton sign={5}/>
+          <NumberButton sign={6}/>
+          <ActionButton sign={"−"}/>
+          <NumberButton sign={7}/>
+          <NumberButton sign={8}/>
+          <NumberButton sign={9}/>
+          <ActionButton sign={"×"} />
+          <NumberButton sign={0} class={"wider-btn"}/>
+          <NumberButton sign={'.'}/>
+          <ActionButton sign={"÷"}/>
+          <ActionButton sign={"="} class={'confirm-btn'} />
         </div>
       </div>
     </div>
