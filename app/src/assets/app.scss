@@ -6,14 +6,31 @@
     align-items: center;
     justify-content: center;
     .Calculator{
-        padding: 20px;
+        max-width: 450px;
+        width: 100%;
+        padding: 35px 25px;
         background-color: $base_color;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         .Calc-screen{
             width: 100%;
             background-color: $screen_color;
             height: 100px;
             border-radius: 8px;
             margin: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span{
+                display: inline-block;
+                width: 100%;
+                color: $font_color;
+                font-family: $screen_font;
+                text-align: right;
+                // font-size: 48px;
+                font-size: 4rem;
+                padding: 0px 15px;
+            }
         }
         .Calc-keyboard{
             width: 100%;
