@@ -38,26 +38,26 @@ function App() {
     else{
       switch(operation){
         case "+":
-          var res = parseInt(numA) + parseInt(numB)
+          var res = parseFloat(numA) + parseFloat(numB)
           console.log(res)
           setResult(res.toString());
           clearActions();
         break;
 
         case "−":
-          res = parseInt(numA) - parseInt(numB)
+          res = parseFloat(numA) - parseFloat(numB)
           setResult(res.toString());
           clearActions();
         break;
 
         case "×":
-          res = parseInt(numA) * parseInt(numB)
+          res = parseFloat(numA) * parseFloat(numB)
           setResult(res.toString());
           clearActions();
         break;
 
         case "÷":
-          res = parseInt(numA) / parseInt(numB)
+          res = parseFloat(numA) / parseFloat(numB)
           setResult(res.toString());
           clearActions();
         break;
